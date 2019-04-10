@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Models;
+using RestaurantManagerApp.Models;
 
-namespace WebApplication1.Controllers
+namespace RestaurantManagerApp.Controllers
 {
     public class InventoriesController : Controller
     {

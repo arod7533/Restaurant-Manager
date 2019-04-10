@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Areas.Identity.Data;
+using RestaurantManagerApp.Areas.Identity.Data;
 
-namespace WebApplication1.Models
+namespace RestaurantManagerApp.Models
 {
     public class IdentityRestaurantContext : IdentityDbContext<RestaurantManagerUser>
     {

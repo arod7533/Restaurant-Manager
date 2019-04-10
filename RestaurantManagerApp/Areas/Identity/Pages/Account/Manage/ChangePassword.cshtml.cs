@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WebApplication1.Areas.Identity.Data;
-namespace WebApplication1.Areas.Identity.Pages.Account.Manage
+using RestaurantManagerApp.Areas.Identity.Data;
+namespace RestaurantManagerApp.Areas.Identity.Pages.Account.Manage
 {
     public class ChangePasswordModel : PageModel
     {

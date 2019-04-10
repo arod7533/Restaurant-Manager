@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace WebApplication1.Models
+namespace RestaurantManagerApp.Models
 {
     public partial class AdvDatabaseProjectContext : DbContext
     {

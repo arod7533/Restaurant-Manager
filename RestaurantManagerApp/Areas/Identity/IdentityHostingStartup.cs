@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication1.Areas.Identity.Data;
-using WebApplication1.Models;
+using RestaurantManagerApp.Areas.Identity.Data;
+using RestaurantManagerApp.Models;
 
-[assembly: HostingStartup(typeof(WebApplication1.Areas.Identity.IdentityHostingStartup))]
-namespace WebApplication1.Areas.Identity
+[assembly: HostingStartup(typeof(RestaurantManagerApp.Areas.Identity.IdentityHostingStartup))]
+namespace RestaurantManagerApp.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {

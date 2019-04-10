@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApplication1.Models;
+using RestaurantManagerApp.Models;
 
-namespace WebApplication1.Migrations
+namespace RestaurantManagerApp.Migrations
 {
     [DbContext(typeof(IdentityRestaurantContext))]
     partial class IdentityRestaurantContextModelSnapshot : ModelSnapshot

@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WebApplication1.Models;
+using RestaurantManagerApp.Models;
 
 namespace RestaurantManager
 {
@@ -30,7 +30,9 @@ namespace RestaurantManager
         {
 
             // Add framework services.  
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().AddRazorPagesOptions(options=> {
+                options.Conventions.AddAreaPageRoute("Identity", "/Account/Login",""); 
+                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<AdvDatabaseProjectContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
  

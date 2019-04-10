@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WebApplication1.Areas.Identity.Data;
+using RestaurantManagerApp.Areas.Identity.Data;
 
-namespace WebApplication1.Areas.Identity.Pages.Account
+namespace RestaurantManagerApp.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterModel : PageModel

@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplication1.Models
+namespace RestaurantManagerApp.Models
 {
     public class ErrorViewModel
     {
