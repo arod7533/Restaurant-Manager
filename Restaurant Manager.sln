@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantManager", "WebApplication1\RestaurantManager.csproj", "{0CF9A8D6-66E1-40D5-8AD7-6626C60D2639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantManagerApp", "RestaurantManagerApp\RestaurantManagerApp.csproj", "{0CF9A8D6-66E1-40D5-8AD7-6626C60D2639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
