@@ -14,7 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication1.Models;
 
-namespace WebApplication1
+namespace RestaurantManager
 {
     public class Startup
     {

@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>6bb9cffe-df8c-49ee-ba32-3f5d15db65ca</UserSecretsId>
+    <AssemblyName>RestaurantManager</AssemblyName>
+    <RootNamespace>RestaurantManager</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
