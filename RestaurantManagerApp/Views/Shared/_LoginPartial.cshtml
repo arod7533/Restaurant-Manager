@@ -7,6 +7,16 @@
 {
     <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="~/">Log In</a></li>
+                    <li><a href="~/Customers">Customers</a></li>
+                    <li><a href="~/Inventories">Inventories</a></li>
+                    <li><a href="~/Orders">Orders</a></li>
+                </ul>
+            </li>
+            
             <li>
                 <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@UserManager.GetUserName(User)</a>
             </li>

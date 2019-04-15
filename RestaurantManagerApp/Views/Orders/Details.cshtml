@@ -1,0 +1,30 @@
+﻿@model RestaurantManagerApp.Models.Orders
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OQuant)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OQuant)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OInvNumNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OInvNumNavigation.InvDesc)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ONum">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

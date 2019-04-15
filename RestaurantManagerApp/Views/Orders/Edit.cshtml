@@ -1,0 +1,44 @@
+﻿@model RestaurantManagerApp.Models.Orders
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Orders</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ONum" />
+            <div class="form-group">
+                <label asp-for="OInvNum" class="control-label">Order Description</label>
+                <select asp-for="OInvNum" class="form-control" asp-items="ViewBag.OInvNum"></select>
+                <span asp-validation-for="OInvNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OQuant" class="control-label">Quantity Quantity</label>
+                <input asp-for="OQuant" class="form-control" />
+                <span asp-validation-for="OQuant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OApproved" class="control-label">Is Approved?</label>
+                <input asp-for="OApproved" class="form-control" />
+                <span asp-validation-for="OApproved" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

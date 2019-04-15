@@ -149,7 +149,7 @@ namespace RestaurantManagerApp.Areas.Identity.Pages.Account.Manage
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("WebApplication1"),
+                _urlEncoder.Encode("RestaurantManagerApp"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

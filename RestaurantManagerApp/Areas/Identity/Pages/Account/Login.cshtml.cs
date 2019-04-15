@@ -68,7 +68,7 @@ namespace RestaurantManagerApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl = returnUrl ?? Url.Content("~/Home/OpenPage");
+            returnUrl = returnUrl ?? Url.Content("~/Orders");
 
             if (ModelState.IsValid)
             {

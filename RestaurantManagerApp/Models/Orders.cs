@@ -8,6 +8,7 @@ namespace RestaurantManagerApp.Models
         public int ONum { get; set; }
         public int OInvNum { get; set; }
         public int OQuant { get; set; }
+        public bool OApproved { get; set; }
 
         public Inventory OInvNumNavigation { get; set; }
     }
