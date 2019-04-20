@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<RestaurantManagerApp.Models.Inventory>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inventories";
 }
 
-<h2>Index</h2>
+<h2>Inventories</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,13 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.InvDesc)
+                Description @*@Html.DisplayNameFor(model => model.InvDesc)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.InvQoh)
+                Quantity on Hand@*@Html.DisplayNameFor(model => model.InvQoh)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.InvPar)
+                Par Amount @*@Html.DisplayNameFor(model => model.InvPar)*@
             </th>
             <th></th>
         </tr>

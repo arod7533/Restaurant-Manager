@@ -1,0 +1,41 @@
+﻿@model IEnumerable<RestaurantManagerApp.Models.EmployeeInfo>
+
+@{
+    ViewData["Title"] = "Employee Information";
+}
+
+<h2>Employee Information</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name @*@Html.DisplayNameFor(model => model.EName)*@
+            </th>
+            <th>
+                Level @*@Html.DisplayNameFor(model => model.ELevel)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ELevel)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ENum">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ENum">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ENum">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RestaurantManagerApp.Models.RecipeLines>
+
+@{
+    ViewData["Title"] = "Recipes";
+}
+
+<h2>Recipes</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Qty @*@Html.DisplayNameFor(model => model.RlQty)*@
+            </th>
+            <th>
+                Inventory Number@*@Html.DisplayNameFor(model => model.RlInvNumNavigation)*@
+            </th>
+            <th>
+                Description @*@Html.DisplayNameFor(model => model.RlItemNumNavigation)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RlQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RlInvNumNavigation.InvDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RlItemNumNavigation.ItemName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RlNum">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RlNum">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RlNum">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

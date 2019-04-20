@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<RestaurantManagerApp.Models.Customers>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Customers";
 }
 
-<h2>Index</h2>
+<h2>Customers</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,19 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CLname)
+                Last Name @*@Html.DisplayNameFor(model => model.CLname)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CFname)
+                First Name @*@Html.DisplayNameFor(model => model.CFname)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CAddy)
+                Address @*@Html.DisplayNameFor(model => model.CAddy)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CEmail)
+                Email @*@Html.DisplayNameFor(model => model.CEmail)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CCcnum)
+                CC Number @*@Html.DisplayNameFor(model => model.CCcnum)*@
             </th>
             <th></th>
         </tr>

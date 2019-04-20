@@ -1,0 +1,30 @@
+﻿@model RestaurantManagerApp.Models.EmployeeInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmployeeInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ELevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ELevel)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ENum">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

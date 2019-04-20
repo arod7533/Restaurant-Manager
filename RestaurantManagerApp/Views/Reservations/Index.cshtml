@@ -1,0 +1,65 @@
+﻿@model IEnumerable<RestaurantManagerApp.Models.Reservations>
+
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<h2>Reservations</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date @*@Html.DisplayNameFor(model => model.RDate)*@
+            </th>
+            <th>
+                Time @*@Html.DisplayNameFor(model => model.RTime)*@
+            </th>
+            <th>
+                Subtotal @*@Html.DisplayNameFor(model => model.RSubtotal)*@
+            </th>
+            <th>
+                Paid Amount @*@Html.DisplayNameFor(model => model.RPaid)*@
+            </th>
+            <th>
+                Table Number @*@Html.DisplayNameFor(model => model.RTable)*@
+            </th>
+            <th>
+                Address @*@Html.DisplayNameFor(model => model.RCnumNavigation)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RSubtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RPaid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RTable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RCnumNavigation.CAddy)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RNum">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RNum">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RNum">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
